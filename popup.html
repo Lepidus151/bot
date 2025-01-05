@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <div class="input-group">
+        <label for="productUrl">商品URL:</label>
+        <input type="text" id="productUrl" placeholder="Amazonの商品URLを入力">
+      </div>
+      <div class="input-group">
+        <label for="productTitle">商品名:</label>
+        <input type="text" id="productTitle" placeholder="商品名を入力">
+      </div>
+      <div class="input-group">
+        <label for="quantity">数量:</label>
+        <input type="number" id="quantity" min="1" value="1">
+      </div>
+      <div class="speed-mode">
+        <label>
+          <input type="checkbox" id="speedMode">
+          スピードモード（今すぐ購入を使用）
+        </label>
+      </div>
+      <button id="saveProduct">商品を登録</button>
+      <button id="addToCart">選択した商品を購入</button>
+      <div id="status" class="status"></div>
+      <div id="productList"></div>
+    </div>
+    <div class="log-container" id="logContainer">
+      <h3>操作ログ</h3>
+    </div>
+  </div>
+  
+  <script src="js/popup.js" type="module"></script>
+</body>
+</html>
